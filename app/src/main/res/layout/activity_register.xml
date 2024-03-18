@@ -1,0 +1,189 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#004941"
+    android:textColor="@color/white"
+    tools:context=".Register">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/AppLogo"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/agrospread_logo">
+        </ImageView>
+
+
+        <TextView
+            android:id="@+id/SignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/rubik_bold"
+            android:text="Sign Up"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="15pt"></TextView>
+
+        <TextView
+            android:id="@+id/Comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SignUp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/lato_italic"
+            android:text="Fill in your information below."
+            android:textAlignment="center"
+            android:textColor="@color/white">
+        </TextView>
+
+        <EditText
+            android:id="@+id/inputEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:alpha="0.80"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Email"
+            android:autofillHints="emailAddress"
+            android:fontFamily="@font/rubik"
+            android:padding="15dp"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/white"
+            android:textColorHint="#FFFFFF"
+            android:textSize="16dp"></EditText>
+
+        <EditText
+            android:id="@+id/FullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inputEmail"
+            android:alpha="00.80"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="15dp"
+            android:backgroundTint="@color/white"
+            android:hint="Enter Full Name"
+            android:inputType="textPersonName"
+            android:textColor="@color/white"
+            android:textColorHint="#FFFFFF"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/inputUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/FullName"
+            android:alpha="00.80"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:drawableEnd="@drawable/baseline_check_24"
+            android:padding="15dp"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:textColor="@color/white"
+            android:textColorHint="#FFFFFF"
+            android:backgroundTint="@color/white"
+            android:textSize="16dp"></EditText>
+
+
+        <EditText
+            android:id="@+id/pass1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inputUserName"
+            android:alpha="00.80"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:drawableEnd="@drawable/hidden_eye"
+            android:padding="15dp"
+            android:inputType="textPassword"
+            android:text="Password"
+            android:textColor="@color/white"
+            android:textColorHint="#FFFFFF"
+            android:backgroundTint="@color/white"
+            android:textSize="16dp">
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/pass1"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:alpha="0.50"
+            android:fontFamily="@font/rubik_italic"
+            android:paddingLeft="10dp"
+            android:text="Password must be at least 8 characters, numbers, and has a capital.">
+        </TextView>
+
+        <EditText
+            android:id="@+id/UserAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pass1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:alpha="00.80"
+            android:padding="15dp"
+            android:text="Address"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/white"
+            android:textSize="16dp"></EditText>
+
+        <EditText
+            android:id="@+id/PhoneNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/UserGender"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:alpha="00.80"
+            android:padding="15dp"
+            android:hint="Phone Number"
+            android:autofillHints="phone"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/white"
+            android:textColorHint="#FBF9F9"
+            android:textSize="16dp"></EditText>
+
+        <Button
+            android:id="@+id/RegisterBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PhoneNo"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/rubik_bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Register"
+            android:textColor="#000000"
+            android:textSize="17dp"></Button>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/RegisterBtn"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:text="We need permission for the service you use."
+            android:textColor="@color/white"></TextView>
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

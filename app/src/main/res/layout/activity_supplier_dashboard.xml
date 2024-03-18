@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#004941"
+    tools:context=".SupplierDashboard">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:drawableStart="@drawable/baseline_menu_24"
+        android:drawableEnd="@drawable/shopping_cart"
+        android:text="Manage Products"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"></TextView>
+
+
+    <EditText
+        android:id="@+id/SearchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white"
+        android:drawableStart="@drawable/baseline_search_bar"
+        android:drawableEnd="@drawable/baseline_photo_camera"
+        android:hint="  Search products"
+        android:inputType="text"
+        android:padding="14dp"
+        android:textColor="@color/black"
+        android:textSize="18.5dp" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/categories"
+        android:layout_below="@id/SearchBar"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:drawableEnd="@drawable/baseline_view_list"
+        android:text="Categories"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SearchBar"
+        android:gravity="center"
+        android:layout_marginTop="70dp">
+
+        <Button
+            android:id="@+id/addProduct"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/categories_buttons"
+            android:backgroundTint="@color/white"
+            android:text="Add Product"
+            android:textAllCaps="false"></Button>
+
+        <Button
+            android:id="@+id/orderHistory"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/categories_buttons"
+            android:backgroundTint="@color/white"
+            android:text="Order History"
+            android:textAllCaps="false"></Button>
+
+        <Button
+            android:id="@+id/paymentInfo"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/categories_buttons"
+            android:backgroundTint="@color/white"
+            android:text="Payment Info"
+            android:textAllCaps="false"></Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="265dp">
+
+        <Button
+            android:id="@+id/Orders"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="left"
+            android:background="@drawable/categories_buttons"
+            android:backgroundTint="@color/white"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:text="Orders"></Button>
+
+        <Button
+            android:id="@+id/Returns"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/categories_buttons"
+            android:backgroundTint="@color/white"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:text="Returns"></Button>
+
+        <Button
+            android:id="@+id/seeMore"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/categories_buttons"
+            android:backgroundTint="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textAllCaps="false"
+            android:text="More..."></Button>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="330dp"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        android:background="#CCC9C9">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#FFFFFF"
+            android:padding="10dp"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:text="Sales"></TextView>
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:text="See products and sales.">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/dashboardPhoto"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="210dp"
+            android:layout_height="120dp"
+            android:background="@color/white"
+            android:src="@drawable/fertilizers_dashboard_photo">
+        </ImageView>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="500dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="View your sales">
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="540dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="190dp"
+            android:layout_height="250dp"
+            android:foregroundGravity="left"
+            android:background="@color/white"
+            android:paddingBottom="80dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:src="@drawable/img_2"></ImageView>
+
+        <ImageView
+            android:id="@+id/img3"
+            android:layout_toRightOf="@id/img2"
+            android:layout_width="190dp"
+            android:layout_height="250dp"
+            android:layout_gravity="right"
+            android:layout_marginLeft="10dp"
+            android:paddingBottom="80dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="5dp"
+            android:background="@color/white"
+            android:src="@drawable/img_3"></ImageView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="710dp"
+        android:layout_marginRight="20dp">
+
+        <Button
+            android:id="@+id/addButton1"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="#094A27"
+            android:background="@drawable/categories_buttons"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:text="Add">
+        </Button>
+
+        <Button
+            android:id="@+id/addButton2"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/addButton1"
+            android:backgroundTint="#094A27"
+            android:background="@drawable/categories_buttons"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:text="Update">
+        </Button>
+    </RelativeLayout>
+</RelativeLayout>

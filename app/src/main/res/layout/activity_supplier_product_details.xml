@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#004941"
+    android:orientation="vertical"
+    tools:context=".SupplierProductDetails">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/productDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:drawableStart="@drawable/baseline_arrow_back_ios"
+            android:text="  Product Details"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="23dp"
+            android:textStyle="bold"></TextView>
+
+        <ImageButton
+            android:id="@+id/shopping_cartButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:background="@color/black"
+            android:backgroundTint="@color/black"
+            android:contentDescription="@string/shopping_cartButton"
+            android:padding="13dp"
+            android:src="@drawable/baseline_shopping_cart_white"
+            android:textAlignment="textEnd" />
+    </RelativeLayout>
+
+
+        <EditText
+            android:id="@+id/inputProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/white"
+            android:hint="Enter product name..."
+            android:padding="11dp"
+            android:textSize="20dp"
+            android:textStyle="italic">
+        </EditText>
+
+    <ImageView
+        android:id="@+id/imageProduct"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:srcCompat="@drawable/img_1" ></ImageView>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/Product1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/rubik"
+            android:orientation="vertical"
+            android:padding="14dp"
+            android:text="Product"
+            android:textSize="18dp"></TextView>
+
+        <TextView
+            android:id="@+id/Product2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Product1"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/rubik"
+            android:textColor="@color/black"
+            android:padding="14dp"
+            android:text="Product"
+            android:textSize="18dp"></TextView>
+
+        <TextView
+            android:id="@+id/Product3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Product2"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/rubik"
+            android:textColor="@color/black"
+            android:padding="14dp"
+            android:text="Product"
+            android:textSize="18dp"></TextView>
+
+
+        <EditText
+            android:id="@+id/ProductDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_toRightOf="@+id/Product1"
+            android:background="@color/white"
+            android:drawableEnd="@drawable/baseline_keyboard_arrow_down"
+            android:hint="Enter product description"
+            android:inputType="textLongMessage"
+            android:padding="13dp"
+            android:textStyle="italic"></EditText>
+
+        <EditText
+            android:id="@+id/ProductCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ProductDesc"
+            android:layout_toRightOf="@+id/Product2"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/white"
+            android:drawableEnd="@drawable/baseline_keyboard_arrow_down"
+            android:hint="Enter product category"
+            android:inputType="textLongMessage"
+            android:padding="13dp"
+            android:textStyle="italic"></EditText>
+
+        <Button
+            android:id="@+id/TagButton"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ProductCategory"
+            android:layout_marginLeft="-1dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/Product3"
+            android:background="#04600C"
+            android:padding="16.5dp"
+            android:text="Product 1"
+            android:textAllCaps="false"
+            android:textColor="@color/white"></Button>
+
+        <Button
+            android:id="@+id/AddTagButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ProductCategory"
+            android:layout_toRightOf="@id/Product3"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="125dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/black"
+            android:drawableStart="@drawable/baseline_add_tag"
+            android:padding="14dp"
+            android:text="Add Tag"
+            android:textAllCaps="false"
+            android:textColor="@color/white"></Button>
+
+        <TextView
+            android:id="@+id/Details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/AddTagButton"
+            android:text="Additional Details:"
+            android:textColor="@color/white"
+            android:layout_marginTop="18dp"
+            android:layout_marginStart="22dp"
+            android:textStyle="bold"
+            android:textSize="22sp">
+        </TextView>
+        <Button
+            android:id="@+id/addProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Details"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:padding="20dp"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:backgroundTint="@color/white"
+            android:shadowColor="#289115"
+            android:text="  Add New Variation"
+            android:textAlignment="textStart"
+            android:drawableStart="@drawable/baseline_add_black">
+        </Button>
+
+        <Button
+            android:id="@+id/ProductVariation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addProduct"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:drawableStart="@drawable/baseline_check_box"
+            android:drawableEnd="@drawable/baseline_arrow_forward"
+            android:textSize="18sp"
+            android:padding="20dp"
+            android:backgroundTint="@color/white"
+            android:shadowColor="#289115"
+            android:text="  Product Variation"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"></Button>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="390dp">
+            <Button
+                android:id="@+id/deleteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#094A27"
+                android:fontFamily="@font/rubik_m"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="20dp"
+                android:text="Delete Product"
+                android:textAllCaps="false"
+                android:padding="19dp"
+                android:textColor="@color/white"
+                android:textSize="18.5sp"/>
+
+            <Button
+                android:id="@+id/SaveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textAlignment="textEnd"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="#094A27"
+                android:fontFamily="@font/rubik_m"
+                android:padding="19sp"
+                android:text="Save Changes"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18.5sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

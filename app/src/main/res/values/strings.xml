@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RegisterActivity</string>
+    <string name="shopping_cartButton">Open Shopping Cart</string>
+    <string name="add_cart_button_description">Open menu</string>
+</resources>

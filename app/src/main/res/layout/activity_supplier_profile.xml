@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#004941"
+    android:orientation="vertical"
+    tools:context=".SupplierProfile">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@color/white"
+        android:src="@drawable/baseline_menu">
+
+        <ImageView
+            android:id="@+id/MenuBar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="14dp"
+            android:src="@drawable/baseline_menu">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/Supplier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik_m"
+            android:text="Supplier"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="22dp">
+        </TextView>
+    </android.support.design.widget.CoordinatorLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/SupplierProfile"
+            android:layout_width="75dp"
+            android:layout_height="71dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/white"
+            android:src="@drawable/supplier_photo"
+            app:layout_constraintBottom_toTopOf="@+id/SupplierName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/SupplierName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SupplierProfile"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/lato_black"
+            android:gravity="center"
+            android:text="Arsheneth M. Suquib"
+            android:textColor="@color/white"
+            android:textSize="19.5dp"></TextView>
+
+        <Button
+            android:id="@+id/Button_Products"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SupplierName"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/rubik_m"
+            android:textSize="16.5dp"
+            android:padding="22dp"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/white"
+            android:drawableEnd="@drawable/end_arrow_button"
+            android:text="View Products"
+            android:textAlignment="textStart">
+        </Button>
+
+
+        <Button
+            android:id="@+id/Button_Orders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Button_Products"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/rubik_m"
+            android:textSize="16.5dp"
+            android:padding="22dp"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/white"
+            android:drawableEnd="@drawable/end_arrow_button"
+            android:text="Order History"
+            android:textAlignment="textStart">
+        </Button>
+
+
+        <Button
+            android:id="@+id/ButtonPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Button_Orders"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/rubik_m"
+            android:textSize="16.5dp"
+            android:padding="22dp"
+            android:textAllCaps="false"
+            android:drawableEnd="@drawable/end_arrow_button"
+            android:text="Payment Details"
+            android:clickable="true"
+            android:backgroundTint="@color/white"
+            android:textAlignment="textStart">
+        </Button>
+
+        <Button
+            android:id="@+id/Button_Settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ButtonPayment"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/rubik_m"
+            android:textSize="16.5dp"
+            android:padding="22dp"
+            android:textAllCaps="false"
+            android:drawableEnd="@drawable/end_arrow_button"
+            android:text="Account Settings"
+            android:backgroundTint="@color/white"
+            android:textAlignment="textStart">
+        </Button>
+
+
+
+
+        <Button
+            android:id="@+id/Logout_Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Button_Settings"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/rubik_m"
+            android:textSize="16.5dp"
+            android:padding="22dp"
+            android:textAllCaps="false"
+            android:drawableEnd="@drawable/end_arrow_button"
+            android:backgroundTint="@color/white"
+            android:textAlignment="textStart"
+            android:clickable="true"
+            android:text="Logout">
+        </Button>
+    </RelativeLayout>
+</LinearLayout>

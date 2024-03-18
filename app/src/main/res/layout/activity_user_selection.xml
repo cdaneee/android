@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/user_welcome"
+    tools:context=".UserSelection">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginBottom="-530dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="480dp"
+            android:layout_marginTop="-80dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="100dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/lato_bold"
+                android:text="Welcome!"
+                android:textColor="@color/black"
+                android:textSize="38dp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:fontFamily="@font/lato_italic"
+                android:text="(Select user)"
+                android:textColor="@color/black"
+                android:textSize="18sp"></TextView>
+
+            <Button
+                android:id="@+id/buttonFarmer"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-18dp"
+                android:background="@drawable/buttons"
+                android:backgroundTint="#527721"
+                android:clickable="true"
+                android:fontFamily="@font/rubik_m"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="Farmer"
+                android:textColor="@color/white"
+                android:textSize="25dp"></Button>
+
+            <Button
+                android:id="@+id/buttonSupplier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="30px"
+                android:background="@drawable/buttons"
+                android:backgroundTint="#527721"
+                android:clickable="true"
+                android:fontFamily="@font/rubik_m"
+                android:paddingLeft="22dp"
+                android:paddingRight="20dp"
+                android:text="Supplier"
+                android:textColor="@color/white"
+                android:textSize="25dp"></Button>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
